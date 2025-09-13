@@ -26,15 +26,17 @@ export const HeroSection = () => {
             alt="Profile"
             className="w-full h-full object-cover"
             style={{
-              maskImage: "linear-gradient(to top, transparent 5%, black 40%)",
-              WebkitMaskImage: "linear-gradient(to top, transparent 5%, black 40%)",
+              maskImage:
+                "linear-gradient(to top, transparent 5%, black 40%)",
+              WebkitMaskImage:
+                "linear-gradient(to top, transparent 5%, black 40%)",
             }}
           />
         </motion.div>
       </div>
 
       <div className="relative z-20 container flex flex-col justify-start items-center mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative  w-full  h-screen flex flex-col justify-end items-start pb-10">
+        <div className="relative w-full h-screen flex flex-col justify-end items-start pb-10">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -56,19 +58,38 @@ export const HeroSection = () => {
           >
             <span className="text-neutral-500">Explore</span>
             <motion.div {...motionProps}>
-              <Button variant="outline" className="rounded-full border-blue-500 text-blue-500 hover:bg-blue-50 hover:text-blue-600">
+              <Button
+                variant="outline"
+                className="rounded-full border-blue-500 text-blue-500 hover:bg-blue-50 hover:text-blue-600"
+              >
                 A¹ Sense
               </Button>
             </motion.div>
             <motion.div {...motionProps}>
-              <Button variant="outline" className="rounded-full border-blue-500 text-blue-500 hover:bg-blue-50 hover:text-blue-600">
+              <Button
+                variant="outline"
+                className="rounded-full border-blue-500 text-blue-500 hover:bg-blue-50 hover:text-blue-600"
+              >
                 B¹ Eye
               </Button>
             </motion.div>
             <motion.div {...motionProps}>
-              <Button variant="outline" className="rounded-full border-blue-500 text-blue-500 hover:bg-blue-50 hover:text-blue-600">
+              <Button
+                variant="outline"
+                className="rounded-full border-blue-500 text-blue-500 hover:bg-blue-50 hover:text-blue-600"
+              >
                 A¹ Neuro
               </Button>
+            </motion.div>
+
+            {/* New glass‑blur CTA */}
+            <motion.div {...motionProps}>
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center rounded-full border border-white/40 bg-white/30 px-6 py-2 text-sm font-medium text-black backdrop-blur-md transition-colors hover:bg-white/40"
+              >
+                Connect with Abdelrahman Ashour
+              </a>
             </motion.div>
           </motion.div>
         </div>
