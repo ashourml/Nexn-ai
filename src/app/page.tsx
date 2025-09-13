@@ -7,6 +7,9 @@ import { HiringSection } from "@/components/hiring-section";
 import { ProgressSection } from "@/components/progress-section";
 import { ImpactSection } from "@/components/impact-section";
 import { ContactSection } from "@/components/contact-section";
+import { FAQSection } from "@/components/faq-section";
+import { SocialProof } from "@/components/social-proof";
+import { BookingSection } from "@/components/booking-section";
 
 export default function Home() {
   return (
@@ -17,7 +20,10 @@ export default function Home() {
       <ApproachSection />
       <ProgressSection />
       <ImpactSection />
+      <SocialProof />
       <HiringSection />
+      <FAQSection />
+      <BookingSection />
       <ContactSection />
       <AppFooter />
     </main>

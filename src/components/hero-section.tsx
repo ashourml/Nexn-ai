@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { AnimatedTextBlur } from "./animated-text";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 const motionProps = {
   whileHover: { scale: 1.05 },
@@ -21,10 +22,15 @@ export const HeroSection = () => {
           transition={{ duration: 1.5, ease: "easeOut" }}
           className="w-full h-full"
         >
-          <img
+          <Image
             src="/model.jpg"
-            alt="Profile"
+            alt="Professional developer portrait - Abdelrahman Ashour full-stack developer"
+            width={1920}
+            height={1080}
             className="w-full h-full object-cover"
+            priority
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
             style={{
               maskImage:
                 "linear-gradient(to top, transparent 5%, black 40%)",
@@ -85,10 +91,10 @@ export const HeroSection = () => {
             {/* New glass‑blur CTA */}
             <motion.div {...motionProps}>
               <a
-                href="#contact"
+                href="#booking"
                 className="inline-flex items-center justify-center rounded-full border border-white/40 bg-white/30 px-6 py-2 text-sm font-medium text-black backdrop-blur-md transition-colors hover:bg-white/40"
               >
-                Connect with Abdelrahman Ashour
+                Book Free Consultation
               </a>
             </motion.div>
           </motion.div>
