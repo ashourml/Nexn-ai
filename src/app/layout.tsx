@@ -177,8 +177,6 @@ export default function RootLayout({
         <link rel="canonical" href="https://nexn-ai.vercel.app" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#3B82F6" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="format-detection" content="telephone=no" />
         
         {/* Performance and Analytics */}
